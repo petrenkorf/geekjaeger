@@ -1,0 +1,14 @@
+<div class="grid grid-cols-3">
+  <div class="p-2"></div>
+  <div class="flex flex-col items-center justify-center p-2">
+    <% @jobs.each do | job |%>
+      <div class="bg-white shadow-md p-4 rounded w-full my-2">
+        <p class="text-gray-400 uppercase text-xs font-semibold">frontend<p>
+        <p class="text-purple-600 text-xl font-bold"><%= job.role %><p>
+        <p class="text-gray-400 pt-2 leading-5"><%= job.briefing %>.</p>
+      </div>
+    <% end %>
+  </div>
+  <div class="p-2">
+  </div>
+</div>

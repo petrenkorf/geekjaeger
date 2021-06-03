@@ -1,0 +1,2 @@
+class JobArea < ApplicationRecord
+end

@@ -10,3 +10,12 @@ jobs = Job.create([
   {role: 'Go Engineer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante felis, ullamcorper tempus imperdiet id, sodales eu neque. Donec sagittis nisi et nulla tincidunt, nec pellentesque risus egestas. In pharetra congue ipsum, a tincidunt mi sollicitudin id. Proin porta mauris in enim vestibulum, a interdum nunc ultricies. Mauris at velit ut massa faucibus ornare. Duis rhoncus dictum aliquet. Nullam accumsan, mauris vel facilisis fermentum, quam nibh dignissim dui, sit amet bibendum velit tellus vel eros.'},
   {role: 'Web developer', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante felis, ullamcorper tempus imperdiet id, sodales eu neque. Donec sagittis nisi et nulla tincidunt, nec pellentesque risus egestas. In pharetra congue ipsum, a tincidunt mi sollicitudin id. Proin porta mauris in enim vestibulum, a interdum nunc ultricies. Mauris at velit ut massa faucibus ornare. Duis rhoncus dictum aliquet. Nullam accumsan, mauris vel facilisis fermentum, quam nibh dignissim dui, sit amet bibendum velit tellus vel eros.'}
 ])
+
+job_areas = JobArea.create([
+  {name: 'Front-end'},
+  {name: 'Back-end'},
+  {name: 'Full-stack'},
+  {name: 'Mobile'},
+  {name: 'Data Science'},
+  {name: 'DevOps'}
+])

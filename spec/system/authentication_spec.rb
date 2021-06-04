@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'User login', type: :system do
+RSpec.describe 'User Authentication', type: :system do
   fixtures :users
 
   scenario "with incorrect credentials" do
@@ -22,6 +22,18 @@ RSpec.describe 'User login', type: :system do
     fill_in "user_password", with: 'password'
 
     click_button "login_button"
+
+    expect(page).to have_current_path(profile_path)
+  end
+
+  scenario "user sign up with correct credentials" do
+    visit new_user_registration_path
+
+    fill_in "user_email", with: 'newuser@email.com'
+    fill_in "user_password", with: 'password'
+    fill_in "user_password_confirmation", with: 'password'
+
+    click_button "sign_up_button"
 
     expect(page).to have_current_path(profile_path)
   end

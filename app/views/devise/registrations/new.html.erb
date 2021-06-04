@@ -1,4 +1,4 @@
-<div class="bg-white shadow-md p-8 rounded-md">
+<div class="bg-white shadow-md p-8 rounded-md w-96">
   <h2 class="text-purple-400 text-3xl">Sign up</h2>
   <div class="mb-4">
     <p class="notice"><%= notice %></p>
@@ -10,7 +10,7 @@
 
     <div class="field">
       <%= f.label :email, class: 'text-gray-400' %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent' %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent w-full' %>
     </div>
 
     <div class="field">
@@ -18,12 +18,12 @@
       <% if @minimum_password_length %>
       <em class="text-gray-400">(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent' %>
+      <%= f.password_field :password, autocomplete: "new-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent w-full' %>
     </div>
 
     <div class="field">
       <%= f.label :password_confirmation, class: 'text-gray-400' %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent' %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent w-full' %>
     </div>
 
     <div class="actions">

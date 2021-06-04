@@ -1,4 +1,4 @@
-<div class="bg-white shadow-md p-8 rounded-md">
+<div class="bg-white shadow-md p-8 rounded-md w-96">
   <h2 class="text-purple-400 text-3xl">Log in</h2>
   <div class="mb-4">
     <p class="notice"><%= notice %></p>
@@ -8,16 +8,16 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field">
       <%= f.label :email, class: 'text-gray-400' %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent' %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent w-full' %>
     </div>
 
     <div class="field">
       <%= f.label :password, class: 'text-gray-400' %><br />
-      <%= f.password_field :password, autocomplete: "current-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent' %>
+      <%= f.password_field :password, autocomplete: "current-password", class: 'text-purple-600 pl-2 rounded-sm shadow-md h-10 mb-4 focus:ring-2 focus:outline-none focus:ring-purple-400 focus:border-transparent w-full' %>
     </div>
 
     <div class="actions">
-      <%= f.submit "Log in", id: 'login_button', class: 'cursor-pointer bg-purple-400 hover:bg-purple-600 mt-4 px-4 py-2 rounded text-white uppercase w-full transition-all' %>
+      <%= f.submit "Log in", id: 'login_button', class: 'cursor-pointer bg-purple-400 hover:bg-purple-600 mt-4 px-4 py-2 rounded text-white uppercase w-full transition-all w-full' %>
     </div>
 
   <% end %>

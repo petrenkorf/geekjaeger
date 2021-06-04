@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UserController < DashboardController
   def profile
   end
 end
